@@ -15,11 +15,11 @@ tt, code, pre { font-family: Consolas, "Liberation Mono", Courier, monospace; fo
 
 #content h1, h2, h3, h4 { color: #333; }
 
-#header { background-color: #fafafa; border-bottom: 1px solid #eee; padding: 4px 8px 10px 6px; height: auto; }
+#header { background-color: #fafafa; border-bottom: 1px solid #eee; padding: 4px 8px 10px 6px; height: 150px;}
 #header a { color: #4183C4; }
-#header > h1 { background: url(../images/logo.png) no-repeat 10px 5px; padding: 5px 45px; color: #393939; }
+#header > h1 {background: url(../images/Logo_rund_transparent_utm.png) no-repeat 10px 5px;padding: 35px 120px;color: #393939;height: auto;vertical-align: middle;}
 
-@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { #header > h1 { background: url(../images/logo@2x.png) no-repeat 10px 5px; background-size: 30px 30px; } }
+@media only screen and (min--moz-device-pixel-ratio: 1), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { #header > h1 { background: url(../images/Logo_rund_transparent_utm.png) no-repeat 10px 5px;} }
 #main { margin: 15px 15px 0 15px; background-color: white; }
 
 #top-menu { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; padding: 10px 10px 2px 20px; background-color: #f3f3f3; background-image: -webkit-linear-gradient(#f9f9f9, #f3f3f3); background-image: linear-gradient(#f9f9f9, #f3f3f3); background-repeat: repeat-x; text-shadow: 0 1px 0 #fff; border-bottom: 1px solid #e5e5e5; }
@@ -252,7 +252,9 @@ div.wiki hr::after { display: table; clear: both; content: ""; }
 
 #projects-index ul.projects ul.projects { border-left: 3px solid #E0E0E0; }
 #projects-index ul.projects.root { padding: 10px; }
-@media (min-width: 900px) { #projects-index ul.projects.root li.root { border: 1px solid #DDD; border-radius: 4px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05); display: inline-block; margin: 0 0 10px; padding: 5%; vertical-align: top; width: 90%; } }
+@media (min-width: 1024px) { #projects-index ul.projects.root { -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }
+  #projects-index ul.projects.root li.root { border: 1px solid #DDD; border-radius: 4px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05); display: inline-block; margin: 0 0 10px; padding: 5%; vertical-align: top; width: 90%; } }
+@media (min-width: 1284px) { #projects-index ul.projects.root { -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; } }
 #projects-index ul.projects a.project { font-weight: bold; font-size: 1.1em; }
 
 .projects li .wiki p { margin-top: 0; }
